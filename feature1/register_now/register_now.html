@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Form: Registration page for soft opening -->
+<html lang-"en">
+  <head>
+      <style>
+          h1 {
+            text-align: center;
+          }
+          h2 {
+            text-align: center;
+          }
+          h3 {
+            text-align: center;
+          }
+          h4 {
+            text-align: center;
+          }
+      </style>
+      <title>Register Now</title>
+  </head>
+
+  <body>
+    <!-- Title & Subtitles -->
+    <h1>The Wildhawk</h1>
+    <h2>Register Now</h2>
+
+    <div>
+      <p>
+        You're invited to The Wildhawk's soft opening at 6pm on August 17th 2021! Be the first to taste our delightful cocktails!  
+      </p>
+    </div>
+
+    <!-- Registration Form -->
+    <form action="successful_submit.html">
+      
+      <!-- Name (required) -->
+      <h5><b>Name: </b></h5><input type="text" placeholder="Enter Name" required>
+      
+      <!-- Email (required) -->
+      <h5><b>Email: </b></h5><input type="email" placeholder="Enter Email" required>
+      
+      <!-- Radio type question; age--> 
+      <h5><b>Age: </b></h5><input type="radio" name="age" value="under 21" /> Under 21
+      <input type="radio" name="age" value="21-30" checked="checked" /> 21-30
+      <input type="radio" name="age" value="31-40" /> 31-40
+      <input type="radio" name="age" value="41-50" /> 41-50
+      <input type="radio" name="age" value="51-60" /> 51-60
+      <input type="radio" name="age" value="61-70" /> 61-70
+      <input type="radio" name="age" value="71+" /> 71+
+      
+      <br>
+      <br>
+      
+      <!-- Select type question; how did you hear about us? -->
+      <h5><b>How did you hear about us? </b></h5>
+      <select name="hear">
+        <option value="Friend or Family">Friend or Family</option>
+        <option value="Twitter">Twitter</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Yelp">Yelp</option>
+        <option value="Google">Google</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <!-- If previous selection was other, describe here -->
+      <h5><b>If other, please describe: </b></h5>
+      <input type="email" placeholder="Other">
+
+      <!-- Dietary Restrictions -->
+      <h5><b>Dietary Restrictions: </b></h5>
+      <textarea name="dietary" cals="250" rows="5"></textarea>
+
+      <!-- Additional Comments or Questions -->
+      <h5><b>Additional comments or questions: </b></h5>
+      <textarea name="comments" cals="250" rows="5"></textarea>
+
+      <br><br>
+      <!-- Submission button; when clicked, leads you to submission confirmation page -->
+      <input type="submit" value="Submit" /> 
+    </form>
+
+    <!-- Navigation back to home page -->
+    <div>
+      <br><br>
+      <a href="../index.html">Home</a>
+    </div>
+
+  </body>
+</html>
